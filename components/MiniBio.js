@@ -1,1 +1,14 @@
-import Image from "next/image"; import styles from "./MiniBio.module.css"; export default function MiniBio({ photoSrc, name, phrase }) { return ( <div className={styles.inner}> <div className={styles.photoWrap}> <Image src={photoSrc} alt={name} fill className={styles.photo} /> </div> <p className={styles.name}>{name}</p> <p className={styles.phrase}>{phrase}</p> </div> ); }
+import Image from "next/image";
+import styles from "./MiniBio.module.css";
+
+export default function MiniBio({ photoSrc, name, phrase }) {
+  return (
+    <div className={styles.inner}>
+      <div className={styles.photoWrap}>
+        <Image src={photoSrc} alt={name} fill className={styles.photo} />
+      </div>
+      <p className={styles.name}>{name}</p>
+      <p className={styles.phrase}>{phrase}</p>
+    </div>
+  );
+}
