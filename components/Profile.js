@@ -1,1 +1,15 @@
- import MiniBio from "./MiniBio"; import styles from "./Profile.module.css"; export default function Profile() { return ( <section className={styles.outer}> <h1 className={styles.title}>Mini Bio</h1> <MiniBio photoSrc="/foto.jpg" name="Kaio Gabriel" phrase="Sou um desenvolvedor em formação, sempre buscando aprender, evoluir e transformar desafios em oportunidades." /> </section> ); }
+import MiniBio from "./MiniBio";
+import styles from "./Profile.module.css";
+
+export default function Profile() {
+  return (
+    <section className={styles.outer}>
+      <h1 className={styles.title}>Mini Bio</h1>
+      <MiniBio
+        photoSrc="/foto.jpg"
+        name="Kaio Gabriel"
+        phrase="Sou um desenvolvedor em formação, sempre buscando aprender, evoluir e transformar desafios em oportunidades."
+      />
+    </section>
+  );
+}
