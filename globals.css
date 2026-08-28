@@ -1,0 +1,36 @@
+:root {
+  --bg: #0f1115;
+  --ink: #eef1f6;
+  --muted: #9aa4b2;
+  --line: #4d6bff;
+  --line-dashed: #2a2f3a;
+  --accent: #7c9bff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
